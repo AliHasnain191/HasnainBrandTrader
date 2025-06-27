@@ -4,6 +4,8 @@ workflows:
     environment:
       flutter: 3.13.6
     scripts:
+      - name: Clean project
+        script: flutter clean
       - name: Get dependencies
         script: flutter pub get
       - name: Build APK
